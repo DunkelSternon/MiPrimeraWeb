@@ -1,0 +1,61 @@
+/* Configura el tamany, marges, etc. de la pàgina web */
+
+body, html {
+height: 100%;
+width: 100%;
+margin: 0px;
+padding: 0px;
+}
+
+/* Configura el div main */
+
+#main {
+height: 80%;
+/* Configura el main com un element flexible */
+display: -webkit-flex;
+display: flex;
+/* Configurar el flex per a que es mostri un element despres d'un altre */
+flex-flow: row;
+}
+
+/* Configura l'aside dins del div main */
+#main aside {
+/* Configura el color del fons d'aside */
+background: #CCF;
+
+flex-grow: 1;
+}
+
+/* Configura el div artooter */
+#artooter {
+/* Configura que el minim d'ample que pot tenir l'artooter es 66.666% */
+min-width: 66.666%;
+}
+
+/* Configura el article dins el div artooter */
+#artooter article {
+background: #CFC;
+/* Configura l'altura màxima que pot tenir l'article */
+min-height: 87.5%;
+}
+
+/* Configura el footer dins del div artooter */
+#artooter footer {
+background: #AFA;
+min-height: 12.5%;
+}
+
+/* Configura el header de la pàgina web */
+header {
+/* Es mostra com un bloc, de esquerra a dreta tot omplert */
+display: block;
+min-height: 10%;
+background: #FC6;
+}
+
+/* Configura el nav de la pàgina web */
+nav {
+display: block;
+min-height: 10%;
+background: #6A9;
+}
